@@ -1,7 +1,20 @@
 # adbw.sh
-Obsidian-Studios, Inc. Android Script to run adb against multiple 
-devices. Which can be further scripted such as the following example.
+adb wrapper script to run adb against multiple devices. See the following 
+examples for usage
 
+## Examples
+Each of the following will launch a new konsole window per device. 
+Presently using konsole in KDE but can be modified for other.
+
+Example use for commands
+```shell
+adbw.sh -t logcat
+adbw.sh -t shell
+```
+
+Or you can use in a script such as the following example.
+
+Example use in script
 ```shell
 #!/bin/bash
 # Author William L. Thomson Jr.
@@ -25,7 +38,6 @@ push() {
         adbw shell pm clear com.android.app
         adbw uninstall com.android.app
         adbw install app/build/outputs/apk/app-debug.apk
-        adbw shell com.android.app
 }
 
 if [[ "${1}" ]]; then
