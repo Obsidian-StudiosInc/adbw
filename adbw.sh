@@ -6,8 +6,20 @@
 
 # Run adb commands against all attached devices :)
 
+# Start adb before we load devices
+[[ -z "$( pgrep -x adb )" ]] && adb start-server
+
+# Load devices
 DEVICES=($( adb devices ))
+
+# Default output is 4 array entries
 SKIP=4
+
+# Check for devices
+if [[ ${#DEVICES[@]} -le ${SKIP} ]]; then
+	echo "No devices found"
+	exit 1
+fi
 
 # Number of devices
 let COUNT=${#DEVICES[@]}-${SKIP}
@@ -15,6 +27,7 @@ let COUNT=${#DEVICES[@]}-${SKIP}
 # Skip first 4, devices start after that
 DEVICES=( ${DEVICES[@]:${SKIP}} )
 
+# Wrap adb with the arguments passed
 adbw() {
 	if [[ ! $1 ]]; then
 		echo "Nothing to pass to adb"
