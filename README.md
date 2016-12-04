@@ -1,4 +1,7 @@
 # adbw.sh
+[![License](http://img.shields.io/badge/license-GPLv3-blue.svg?style=plastic)](https://github.com/Obsidian-StudiosInc/adbw/blob/master/LICENSE)
+[![Build Status](https://travis-ci.org/Obsidian-StudiosInc/adbw.svg?branch=master)](https://travis-ci.org/Obsidian-StudiosInc/adbw)
+
 adb wrapper script to run adb against multiple devices. See the following 
 examples for usage
 
