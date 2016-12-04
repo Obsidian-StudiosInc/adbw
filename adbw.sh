@@ -36,7 +36,7 @@ adbw() {
 
 	local i=0
 	while [[ ${i} < ${COUNT} ]]; do
-		adb_cmd="/usr/bin/adb -s ${DEVICES[${i}]} ${@:1}"
+		adb_cmd="/usr/bin/adb -s ${DEVICES[${i}]} ${*:1}"
 		if [[ ${1} == "-t" ]]; then
 			# wrapper needed since konsole -e broken
 			# passes on any - options to konsole not command :(
