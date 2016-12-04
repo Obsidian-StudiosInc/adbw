@@ -45,7 +45,7 @@ adbw() {
 			chmod 775 "${tmp_file}"
 			konsole -e "${tmp_file}" &
 		else
-			echo ${adb_cmd}
+			echo "${adb_cmd}"
 			${adb_cmd}
 		fi
 		let i+=2;
