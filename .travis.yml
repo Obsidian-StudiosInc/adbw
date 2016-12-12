@@ -1,4 +1,4 @@
-language: bash
+language: none
 sudo: required
 install:
   - wget https://launchpad.net/ubuntu/+source/shellcheck/0.4.4-4/+build/11197881/+files/shellcheck_0.4.4-4_amd64.deb
