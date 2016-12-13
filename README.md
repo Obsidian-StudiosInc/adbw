@@ -1,6 +1,7 @@
 # adbw.sh
-[![License](http://img.shields.io/badge/license-GPLv3-blue.svg?style=plastic)](https://github.com/Obsidian-StudiosInc/adbw/blob/master/LICENSE)
-[![Build Status](https://travis-ci.org/Obsidian-StudiosInc/adbw.svg?branch=master)](https://travis-ci.org/Obsidian-StudiosInc/adbw)
+[![License](https://img.shields.io/badge/license-GPLv3-blue.svg?style=plastic)](https://github.com/Obsidian-StudiosInc/adbw/blob/master/LICENSE)
+[![Build Status](https://img.shields.io/travis/Obsidian-StudiosInc/adbw/master.svg?style=plastic)](https://travis-ci.org/Obsidian-StudiosInc/adbw)
+[![Build Status](https://img.shields.io/shippable/5840e5d7e2ab4d0f0058b4b1/master.svg?style=plastic)](https://app.shippable.com/projects/5840e5d7e2ab4d0f0058b4b1/)
 
 adb wrapper script to run adb against multiple devices. See the following 
 examples for usage
